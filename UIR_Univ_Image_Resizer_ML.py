@@ -1,6 +1,6 @@
 #Developed in X Minutes by Maurizio Naletto www.aied.studio 04/04/2023
 #MIT License - Feel free to use & improve.
-#Check 9
+#Check 10
 
 import tkinter
 import tkinter as tk
