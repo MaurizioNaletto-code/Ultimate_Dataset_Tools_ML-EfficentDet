@@ -1,6 +1,6 @@
 #Developed in 15 Minutes by Maurizio Naletto www.aied.studio 04/04/2023
 #MIT License - Feel free to use & improve.
-#Check 6
+#Check 7
 
 import tkinter
 import tkinter as tk
@@ -43,7 +43,7 @@ class ImageResizerGUI:
 
     def open_files(self):
         self.filenames = filedialog.askopenfilenames(initialdir="/", title="Select files", filetypes=(("JPEG files", "*.jpg"), ("PNG files", "*.png"), ("All files", "*.*")))
-        self.file_label.config(text="Loaded!!!")
+        self.file_label.config(text="Loaded!!")
 
     def choose_output_folder(self):
         self.output_folder = filedialog.askdirectory(initialdir="/", title="Select folder")
