@@ -1,5 +1,12 @@
-# Ultimate_Dataset_Tool_ML
+# Ultimate_Dataset_Tools_ML
 #Image_Resizer & Dataset Fixer#
+
+
+I will share some fixing tools for dataset creators.
+It can happen that using tools for tags the xml output, labels, images and other variables are corrupted or incorrect.
+Imagine saving 2000 png images with their respective XML and knowing that they are incorrect at the time of training. You could waste 1 hour to write a script, or try to use gpt chat to make you suggest it, with related bugs and problems.
+
+This collection of scripts can be useful for developing a dataset fixing system.
 
 
 V0.5
