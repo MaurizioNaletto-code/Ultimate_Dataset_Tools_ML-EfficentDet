@@ -1,11 +1,13 @@
-#Developed in 15 Minutes by Maurizio Naletto www.aied.studio 04/04/2023
+#Developed in X Minutes by Maurizio Naletto www.aied.studio 04/04/2023
 #MIT License - Feel free to use & improve.
 #Check 7
 
 import tkinter
 import tkinter as tk
 from tkinter import filedialog
+from tkinter import messagebox
 from PIL import Image
+import os
 
 
 class ImageResizerGUI:
@@ -31,6 +33,10 @@ class ImageResizerGUI:
         self.height_entry = tk.Entry(self.master, bg='#ffffff')
         self.height_entry.grid(row=2, column=1, padx=10, pady=10)
 
+        self.aspect_ratio_var = tk.IntVar()
+        self.aspect_ratio_check = tk.Checkbutton(self.master, text="Keep aspect ratio", variable=self.aspect_ratio_var, bg='#e6e6e6', font=("Arial", 10))
+        self.aspect_ratio_check.grid(row=2, column=2, padx=10, pady=10)
+
         self.output_label = tk.Label(self.master, text="Choose a folder to save the resized images:", bg='#e6e6e6', font=("Arial", 10))
         self.output_label.grid(row=3, column=0, padx=10, pady=10)
         self.output_button = tk.Button(self.master, text="Browse", command=self.choose_output_folder, bg='#ff6666', font=("Arial", 10))
@@ -53,15 +59,21 @@ class ImageResizerGUI:
         try:
             width = int(self.width_entry.get())
             height = int(self.height_entry.get())
+            keep_aspect_ratio = bool(self.aspect_ratio_var.get())
 
             for filename in self.filenames:
                 img = Image.open(filename)
-                resized_img = img.resize((width, height), Image.ANTIALIAS)
+                if keep_aspect_ratio:
+                    img.thumbnail((width, height), Image.ANTIALIAS)
+                else:
+                    img = img.resize((width, height), Image.ANTIALIAS)
                 new_filename = filename.split("/")[-1].split(".")[0] + "_resized.png"
                 output_path = self.output_folder + "/" + new_filename
-                resized_img.save(output_path)
+                img.save(output_path)
 
             self.file_label.config(text="Images resized successfully!", fg='green')
+            if messagebox.askyesno("Open Output Folder", "Images have been resized. Do you want to open the output folder?"):
+                os.startfile(self.output_folder)
         except:
             self.file_label.config(text="Error: could not resize images.", fg='red')
 
