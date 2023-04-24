@@ -1,4 +1,4 @@
-# Ultimate_Image_Resizer_Plus
+# Ultimate_Image_Resizer_ML
 A little script who can resize easily a lot of images
 
 Introducing our latest software solution for image resize of datasets for machine learning! Our software provides an easy-to-use interface that allows you to quickly and efficiently resize your image datasets to the desired dimensions.
