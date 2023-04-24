@@ -14,7 +14,7 @@ class ImageResizerGUI:
     def __init__(self, master):
         self.master = master
         self.master.title("Image Resizer")
-        self.master.geometry("600x300")
+        self.master.geometry("600x500")
         self.master.config(bg='#e6e6e6')
 
         # Define labels and buttons
