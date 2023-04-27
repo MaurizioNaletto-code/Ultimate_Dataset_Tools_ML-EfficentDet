@@ -22,7 +22,7 @@ V0.6
 
 Introducing a xml modding mode to easy change reference to .png - tiff - webp images.
 <br>
-<img src="Dataset_Fixer.png">
+<img property="og:image" src="Dataset_Fixer.png">
 
 #Alpha version 
 #need some scritps? Contact me at hello@aied.studio  
@@ -33,4 +33,5 @@ Introducing a xml modding mode to easy change reference to .png - tiff - webp im
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Ultimate_Dataset_Tools_ML">
 <meta property="og:site_name" content="Ultimate_Dataset_Tools_ML">
-<meta property="og:image" content="Dataset_Fixer.png"!Dataset_Fixer.png />
+
+<meta property="og:image" content="Dataset_Fixer.png"/>
