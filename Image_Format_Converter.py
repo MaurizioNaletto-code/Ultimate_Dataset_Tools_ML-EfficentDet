@@ -1,8 +1,13 @@
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
+from tkinter.ttk import *
 from PIL import Image
 import os
+import imghdr
+
+
+
 
 class ImageFormatConverter:
     def __init__(self, master):
@@ -38,16 +43,40 @@ class ImageFormatConverter:
         try:
             for file in os.listdir(self.folder_path):
                 file_path = os.path.join(self.folder_path, file)
+
+                #########
+
                 if os.path.isfile(file_path):
-                    img = Image.open(file_path)
-                    file_name, _ = os.path.splitext(file)
-                    new_file_path = os.path.join(self.folder_path, f"{file_name}.{output_format}")
-                    img.save(new_file_path)
+                    img_type = imghdr.what(file_path) #control if is an image or not
+                    if img_type: #
+                        img = Image.open(file_path)
+                        file_name, _ = os.path.splitext(file)
+                        new_file_path = os.path.join(self.folder_path, f"{file_name}.{output_format}")
+                        img.save(new_file_path)
+                    else:
+                        print("Not an image file, moving to the next file.")
+
+
+
+
+                # if os.path.isfile(file_path):
+                #     img = Image.open(file_path)
+                #     file_name, _ = os.path.splitext(file)
+                #     new_file_path = os.path.join(self.folder_path, f"{file_name}.{output_format}")
+                #     img.save(new_file_path)
 
             messagebox.showinfo("Success", "Images converted successfully!")
         except Exception as e:
             messagebox.showerror("Error", f"Could not convert images: {e}")
 
+
+
 root = tk.Tk()
+
+root.iconbitmap("logo.ico")
+
 app = ImageFormatConverter(root)
 root.mainloop()
+
+
+
