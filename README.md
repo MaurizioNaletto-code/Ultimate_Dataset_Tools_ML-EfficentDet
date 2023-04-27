@@ -21,3 +21,5 @@ So why wait? Download our image resize software today and streamline your image 
 V1.0
 
 A xml modding mode to easy change reference to .png - tiff - webp images.
+[[/images/xml tools.jpg|script]]
+
