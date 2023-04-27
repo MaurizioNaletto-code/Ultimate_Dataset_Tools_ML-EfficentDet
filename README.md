@@ -33,4 +33,4 @@ Introducing a xml modding mode to easy change reference to .png - tiff - webp im
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Ultimate_Dataset_Tools_ML">
 <meta property="og:site_name" content="Ultimate_Dataset_Tools_ML">
-<meta property="og:image" content="Dataset_Fixer.png" />
+<meta property="og:image" content="Dataset_Fixer.png"!Dataset_Fixer.png />
