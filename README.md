@@ -26,22 +26,11 @@ Introducing a xml modding mode to easy change reference to .png - tiff - webp im
 V0.6
 
 Updated Radio Buttons for easy switching between EfficentDet D0, EfficentDet D1,EfficentDet D2, EfficentDet D3, EfficentDet D4 and custom mode.
+<img property="og:image" src="Script Interface 1.png">
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<img property="og:image" src="Dataset_Fixer.png">
 
 #Alpha version 
 #need some scritps? Contact me at hello@aied.studio  
