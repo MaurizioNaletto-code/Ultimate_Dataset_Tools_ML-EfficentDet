@@ -67,7 +67,7 @@ class ImageResizerGUI:
 
 
         # Define labels and buttons
-        self.file_label = tk.Label(self.master, text="This script help you to convert images for EfficientDet D0 512x512 ml sessions", bg='#e6e6e6', font=("Arial", 10))
+        self.file_label = tk.Label(self.master, text="This script help you to convert images for EfficientDet ML sessions", bg='#e6e6e6', font=("Arial", 10))
         self.file_label.grid(row=0, column=0, padx=10, pady=10)
         self.file_label = tk.Label(self.master, text="Choose images to resize: (folder)", bg='#e6e6e6', font=("Arial", 10))
         self.file_label.grid(row=1, column=0, padx=10, pady=10)
