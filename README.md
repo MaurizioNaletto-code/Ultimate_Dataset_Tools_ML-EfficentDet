@@ -29,7 +29,7 @@ Updated Radio Buttons for easy switching between EfficentDet D0, EfficentDet D1,
 
 
 
-<img property="" src="Data_Fixer.png">
+<img property="" src="Dataset_Fixer.png">
 
 
 #Alpha version 
