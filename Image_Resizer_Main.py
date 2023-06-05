@@ -161,6 +161,7 @@ class ImageResizerGUI:
 
 root = tk.Tk()
 app = ImageResizerGUI(root)
+root.iconbitmap("logo.ico")  # Replace "icon.ico" with the actual path to your icon file
 
 #root.iconbitmap(r"insert your root path for image.ico")
 
