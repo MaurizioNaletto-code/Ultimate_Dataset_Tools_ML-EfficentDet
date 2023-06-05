@@ -99,7 +99,7 @@ class ImageResizerGUI:
         # Create a label to display the resized image
         self.image_label = tk.Label(self.master, image=resized_image, bg='#e6e6e6')
         self.image_label.image = resized_image  # Store a reference to the resized image
-        self.image_label.grid(row=7, column=0, columnspan=2, padx=10, pady=10,sticky="nsew")
+        self.image_label.grid(row=7, column=0, columnspan=1, padx=10, pady=10,sticky="nsew")
 
         #end
 
